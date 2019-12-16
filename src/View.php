@@ -11,7 +11,7 @@ namespace All\View;
 use Ali\InstanceTrait;
 use All\Exception\ServerErrorException;
 use All\Router\Router;
-use All\Utils\HttpStatus;
+use All\Utils\HttpCode;
 
 class View
 {
@@ -68,7 +68,7 @@ class View
         }
         $tplFile = $this->_getTplFile($tpl);
         if (!file_exists($tplFile)) {
-            throw new ServerErrorException('The template file ' . $tplFile . ' is not exists', HttpStatus::NOT_FOUND);
+            throw new ServerErrorException('The template file ' . $tplFile . ' is not exists', HttpCode::NOT_FOUND);
         }
 
         $this->data && extract($this->data);
