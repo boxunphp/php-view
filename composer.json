@@ -22,7 +22,7 @@
   },
   "autoload": {
     "psr-4": {
-      "All\\View\\": ""
+      "All\\View\\": "src/"
     }
   }
 }
