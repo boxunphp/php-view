@@ -48,7 +48,7 @@ class View
      * @param string $tpl
      * @throws ServerErrorException
      */
-    public function render($tpl = '')
+    public function render($tpl)
     {
         echo $this->fetch($tpl);
     }
